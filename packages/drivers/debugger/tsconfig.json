@@ -1,16 +1,25 @@
 {
-    "extends": "@fluidframework/build-common/ts-common-config.json",
-    "exclude": [
-        "dist",
-        "node_modules"
+  "extends": "@fluidframework/build-common/ts-common-config.json",
+  "exclude": [
+    "dist",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "lib": [
+      "ES2017",
+      "ES2018.Promise",
+      "ES2018.AsyncIterable",
+      "DOM",
+      "DOM.Iterable"
     ],
-    "compilerOptions": {
-        "rootDir": "./src",
-        "outDir": "./dist",
-        "lib": [ "ES2017", "ES2018.Promise", "ES2018.AsyncIterable", "DOM", "DOM.Iterable" ],
-        "types": [ "node" ]
-    },
-    "include": [
-        "src/**/*"
-    ]
+    "types": [
+      "node"
+    ],
+    "module": "esnext"
+  },
+  "include": [
+    "src/**/*"
+  ]
 }

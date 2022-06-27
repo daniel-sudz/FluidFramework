@@ -1,20 +1,21 @@
 {
-    "extends": "@fluidframework/build-common/ts-common-config.json",
-    "compilerOptions": {
-        "noImplicitAny": true,
-        "rootDir": "./",
-        "outDir": "../../dist/test",
-        "types": [
-            "node",
-            "mocha"
-        ],
-    },
-    "include": [
-        "./**/*"
+  "extends": "@fluidframework/build-common/ts-common-config.json",
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "rootDir": "./",
+    "outDir": "../../dist/test",
+    "types": [
+      "node",
+      "mocha"
     ],
-    "references": [
-        {
-            "path": "../.."
-        }
-    ]
+    "module": "esnext"
+  },
+  "include": [
+    "./**/*"
+  ],
+  "references": [
+    {
+      "path": "../.."
+    }
+  ]
 }

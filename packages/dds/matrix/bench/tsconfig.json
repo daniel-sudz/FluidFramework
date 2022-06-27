@@ -1,15 +1,18 @@
 {
-    "extends": "../tsconfig.json",
-    "exclude": [
-        "dist",
-        "node_modules"
+  "extends": "../tsconfig.json",
+  "exclude": [
+    "dist",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "rootDir": "..",
+    "outDir": "./dist",
+    "types": [
+      "node"
     ],
-    "compilerOptions": {
-        "rootDir": "..",
-        "outDir": "./dist",
-        "types": ["node"]
-    },
-    "include": [
-        "./src/**/*"
-    ]
+    "module": "esnext"
+  },
+  "include": [
+    "./src/**/*"
+  ]
 }

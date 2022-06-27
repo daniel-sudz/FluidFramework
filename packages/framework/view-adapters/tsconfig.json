@@ -1,16 +1,17 @@
 {
-    "extends": "@fluidframework/build-common/ts-common-config.json",
-    "exclude": [
-        "dist",
-        "node_modules"
-    ],
-    "compilerOptions": {
-        "declarationDir": "./dist",
-        "rootDir": "./src",
-        "outDir": "./dist",
-        "jsx": "react"
-    },
-    "include": [
-        "src/**/*"
-    ]
+  "extends": "@fluidframework/build-common/ts-common-config.json",
+  "exclude": [
+    "dist",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "declarationDir": "./dist",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "jsx": "react",
+    "module": "esnext"
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
